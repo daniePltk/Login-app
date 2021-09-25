@@ -1,0 +1,22 @@
+<div class="container">
+    <h1>Welcome to our portal</h1>
+    <div class="row" *ngIf="!success">
+        <div>
+            <span>Please Go to Login</span>
+        </div>
+      </div>
+      <div class="row" *ngIf="success">
+        <div>
+        <span> Welcome back {{name}} &#9766;</span>
+        </div>
+      </div>
+      
+      <!-- <span *ngIf="user.loggedIn">INside</span> -->
+      <div class="row">
+        <button type="button" class="btn btn-outline-secondary" *ngIf="!success" routerLinkActive="active" routerLink="/login">Login</button>
+        
+        <button type="button" class="btn btn-outline-secondary" *ngIf="success" routerLinkActive="active" routerLink="/accounts">Welcome Back</button>
+        
+        <button type="button" class="btn btn-outline-secondary" *ngIf="success" (click)="logOut()">Log out</button>
+    </div>
+</div>
