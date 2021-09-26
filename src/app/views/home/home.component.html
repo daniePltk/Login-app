@@ -7,11 +7,10 @@
       </div>
       <div class="row" *ngIf="success">
         <div>
-        <span> Welcome back {{name}} &#9766;</span>
+        <span> Welcome back {{name}}</span>
         </div>
       </div>
       
-      <!-- <span *ngIf="user.loggedIn">INside</span> -->
       <div class="row">
         <button type="button" class="btn btn-outline-secondary" *ngIf="!success" routerLinkActive="active" routerLink="/login">Login</button>
         
