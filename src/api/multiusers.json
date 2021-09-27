@@ -1,0 +1,43 @@
+{"users": [
+      {
+        "success": true,
+        "token": "123123123123",
+        "user": {
+          "username": "email@email.test"
+        },
+        "profiles": [
+          {
+            "id": 1,
+            "name": "Herr Max Mustermann"
+          },
+          {
+            "id": 2,
+            "name": "Frau Mina Musterfrau"
+          }
+        ]
+      },
+      {
+        "success": true,
+        "token": "32311233333",
+        "user": {
+          "username": "email111@email.test"
+        },
+        "profiles": [
+          {
+            "id": 1,
+            "name": "Herr Max Mustermann"
+          }
+        ]
+      },
+      {
+        "success": false,
+        "token": "32311233333",
+        "user": {
+          "username": "email222@email.test"
+        },
+        "profiles": [
+
+        ]
+      }
+    ]
+  }
