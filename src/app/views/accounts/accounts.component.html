@@ -1,15 +1,11 @@
 <h2>My Account</h2>
-<ul ngbNav #nav="ngbNav" class="nav-tabs">
-  <li ngbNavItem>
-    <a ngbNavLink routerLink="./user">User</a>
-    <ng-template ngbNavContent>
-      <account-profile></account-profile>
-    </ng-template>
+
+<ul class="nav nav-tabs">
+  <li class="nav-item">
+    <a class="nav-link active" href="#" routerLinkActive="active" routerLink="/accounts/account-user">User</a>
   </li>
-  <li ngbNavItem>
-    <a ngbNavLink routerLink="./profile">Profile</a>
-    <ng-template ngbNavContent>
-      <account-user></account-user>
-    </ng-template>
+  <li class="nav-item">
+    <a class="nav-link" href="#" routerLink="/accounts/account-profile">Profile</a>
   </li>
 </ul>
+<router-outlet></router-outlet>

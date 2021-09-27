@@ -15,9 +15,16 @@ import { AccountsModalComponent } from './modals/accounts-modal/accounts-modal.c
 const routes: Routes = [
 { path: 'home', component: HomeComponent },
 { path: 'login', component: LoginComponent },
-{ path: 'accounts', component: AccountsComponent },
-{ path: 'accounts/user', component: AccountUserComponent },
-{ path: 'accounts/profile', component: AccountProfileComponent },
+{ path: 'accounts', component: AccountsComponent, children: [
+  {
+    path: 'account-user', // child route path
+    component: AccountUserComponent, // child route component that the router renders
+  },
+  {
+    path: 'account-profile',
+    component: AccountProfileComponent, // another child route component that the router renders
+  },
+]},
 { path: '', component: HomeComponent },
 { path: '**', redirectTo: 'home' }
 ];
